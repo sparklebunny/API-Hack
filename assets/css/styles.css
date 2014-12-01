@@ -1,0 +1,99 @@
+/* GENERAL STYLING */
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+
+}
+
+img {
+
+}
+
+#headline {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 20px;
+	padding: 1%;
+
+}
+/* FORM SEARCH OPTIONS */
+
+form {
+	width: 30%;
+	margin: 0 5% 0 3%;
+	border: 1px solid black;
+	position: relative;
+	float: left;
+}
+
+
+label, input {
+	/* in order to define widths */
+	display: inline-block;
+}
+
+label {
+	/* positions the label text beside the input */
+	width: 25%;
+	text-align: right;
+}
+
+label + input {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+input + input {
+    float: right;
+}
+​	
+
+.input {
+
+}
+
+.property {
+	min-height: 20px;
+	min-width: 100px;
+	max-height: 50px;
+	max-width: 400px;
+	border: 1px solid black;
+	margin: 0 0 10px 30px;
+
+}
+
+
+/* RESULTS */
+
+#results {
+	position: relative;
+	float: right;
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 50%;
+	margin: 0 5% 0 0;
+
+	
+}
+
+#photo {
+	min-height: 100px;
+	min-width: 100px;
+	position: relative;
+	float: left;
+
+}
+
+#results-text {
+	position: relative;
+	float: right;
+	padding: 1px;
+
+}
