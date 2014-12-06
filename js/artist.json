@@ -1,0 +1,27 @@
+{
+  "response": {
+    "status": {
+      "code": "0",
+      "message": "Success",
+      "version": "4.2"
+    },
+    "artists": {
+      "artist": [
+        {
+          "name": "Radiohead",
+          "id": "ARH6W4X1187B99274F"
+          "foreign_ids": [
+                {
+                    "catalog": "CAXFDYO12E2688C130",
+                    "foreign_id": "CAXFDYO12E2688C130:artist:item-1"
+                },
+                {
+                    "catalog": "7digital-US",
+                    "foreign_id": "7digital-US:artist:304"
+                }
+            ]
+          }
+       ]
+     }
+   }
+}

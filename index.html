@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="js/musicsearch.js"></script>
 	<title>Find My Faves</title>
 </head>
 <body>
@@ -11,16 +13,19 @@
 		<h1 id="headline">Find My Favorite Music</h1>
 
 		<form id="search-options">
-			<label>Artist:</label> <input type="text" name="Artist" class="property"><br>
-			<label>Genre:</label> <input type="text" name="Genre" class="property"><br>
-			<label>Location:</label> <input type="text" name="Location" class="property"><br>
-			<label>Date(s):</label> <input type="text" name="Date(s)" class="property"><br>
-			<label>Connect:</label>
+			<label>Artist:</label> <input type="text" name="artist" class="property"><br>
+			<label>Genre:</label> <input type="text" name="genre" class="property"><br>
+			<label>Location:</label> <input type="text" name="location" class="property"><br>
+			<label>Date(s):</label> <input type="text" name="dates" class="property"><br>
+			<input type="submit" value=Submit id="submit-btn">
+			
 		</form>
 
-		<div id="results">
+		<div id="results"></div> 
+		<div id="templates-hidden">
 			<div id="photo"><img src="img/Behance.png"></div>
-			<div id="results-text">Here is some text for placement.</div>
+			<div id="results-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nulla, totam doloribus. Recusandae quo vero natus quas odit enim temporibus quam laborum, cupiditate deserunt assumenda? Sunt quae inventore expedita libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere possimus modi, minima dolor, adipisci distinctio voluptatem, magni sint ab laboriosam eveniet. Quos blanditiis nam voluptas amet omnis, fuga non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, voluptatem natus laborum iste ab veritatis quo illo doloremque laudantium quam necessitatibus eaque tempora accusamus esse, amet fugit, repellendus voluptates minima.</div>
+			<div id="social"><img src="img/Facebook.png" alt="Facebook" class="social"><img src="img/MySpace.png" alt="MySpace" class="social"><img src="img/Google +.png" alt="Google+" class="social"><img src="img/Twitter2.png" alt="Twitter" class="social"><img src="img/Youtube.png" alt="Youtube" class="social"></div>
 		</div>
 	</container>
 </body>

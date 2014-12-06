@@ -70,7 +70,13 @@ input + input {
 }
 
 
+
+
 /* RESULTS */
+
+#templates-hidden {
+	display: none;
+}
 
 #results {
 	position: relative;
@@ -79,16 +85,18 @@ input + input {
 	border-radius: 5px;
 	width: 50%;
 	margin: 0 5% 0 0;
-
+	
 	
 }
 
-#photo {
-	min-height: 100px;
-	min-width: 100px;
+#photo img {
+	min-height: 25px;
+	min-width: 25px;
+	max-height: 50%;
+	max-width: 50%;
 	position: relative;
 	float: left;
-
+	margin: 5px;
 }
 
 #results-text {
@@ -96,4 +104,11 @@ input + input {
 	float: right;
 	padding: 1px;
 
+}
+
+.social {
+	float: right;
+	height: 10%;
+	width: 10%;
+	margin-left: 20px;
 }
