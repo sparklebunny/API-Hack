@@ -89,6 +89,11 @@ input + input {
 	
 }
 
+#photo {
+	display: flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+}
 #photo img {
 	min-height: 25px;
 	min-width: 25px;
