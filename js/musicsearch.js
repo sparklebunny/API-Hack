@@ -9,18 +9,18 @@ $(document).ready(function() {
 		var dates = $(this).find("input[name='dates']").val();
 
 		var artistRequest = {api_key:"RRXS6RKJR0QZY7LZY",
-							 format:"json",
+							 format:"jsonp",
 							 name:"radio",
-							 bucket:"id:CAXFDYO12E2688C130",
-							 // bucket:"id:7digital-US",
+							 // bucket:"id:CAXFDYO12E2688C130",
+							 bucket:"id:7digital-US",
 							};
 
 		var result = $.ajax({
 			async: false,
-			url: "js/query.json",
-			// url: "http://developer.echonest.com/api/v4/artist/search",
-			// data: artistRequest,
-			dataType: "json",
+			// url: "js/query.json",
+			url: "http://developer.echonest.com/api/v4/artist/search",
+			data: artistRequest,
+			dataType: "jsonp",
 			type: "GET",
 		}).done(function(result){
 			console.log("it works").append(result);
