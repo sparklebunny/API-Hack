@@ -26,10 +26,14 @@ $(document).ready(function() {
 		}).done(function(result){
 			console.log("it works" + result);
 
-// Refer to other API for code//
-			$.each(result.response.artists, function(i, item) {
-				$('#results').append("<div> item </div>"); 
+// Returns artist name //
+
+			$.each(result.response.artists, function(i, artist) {
+				var artistNameTemplate = $('.templates .artist-name').clone();
+				artistNameTemplate.find('.name').text(artist.name); 
+				$(".results").append(artistNameTemplate);
 			});
+
 		}).fail(function(xhr, textStatus, error){
 			console.log(error);
 			// $('.search-results').append(errorElem);

@@ -74,11 +74,11 @@ input + input {
 
 /* RESULTS */
 
-#templates-hidden {
+.templates  {
 	display: none;
 }
 
-#results {
+.results {
 	position: relative;
 	float: right;
 	border: 2px solid black;
@@ -89,12 +89,12 @@ input + input {
 	
 }
 
-#photo {
+.photo {
 	display: flex;
 	display: -moz-flex;
 	display: -webkit-flex;
 }
-#photo img {
+.photo img {
 	min-height: 25px;
 	min-width: 25px;
 	max-height: 50%;
@@ -104,7 +104,7 @@ input + input {
 	margin: 5px;
 }
 
-#results-text {
+.results-text {
 	position: relative;
 	float: right;
 	padding: 1px;
