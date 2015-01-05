@@ -12,6 +12,7 @@ $(document).ready(function() {
 							 format:"jsonp",
 							 name: artist,
 							 bucket:"id:CAXFDYO12E2688C130",
+							 results: 10,
 							 // bucket:"id:7digital-US",
 							};
 
@@ -31,6 +32,41 @@ $(document).ready(function() {
 			$.each(result.response.artists, function(i, artist) {
 				var artistNameTemplate = $('.templates .artist-name').clone();
 				artistNameTemplate.find('.name').text(artist.name); 
+				artistNameTemplate.attr('artist-id', artist.id);
+
+
+				//BEGIN BIOGRPHY
+				var bioRequest = {api_key:"RRXS6RKJR0QZY7LZY",
+							 format:"jsonp",
+							 id: artist.id,
+				};
+
+				$.ajax({
+					async: false,
+					// url: "js/query.json",
+					url: "http://developer.echonest.com/api/v4/artist/biographies",
+					data: bioRequest,
+					dataType: "jsonp",
+					jsonpCallback: "MyJSFunc",
+					type: "GET",
+				}).done(function(result){
+
+					$.each(result.response.biographies, function(i, biography) {
+						var bioTemplate = $('.templates .biography').clone();
+
+						bioTemplate.find(".bio-content").text(biography.text);
+						bioTemplate.find(".bio-link").attr('href', biography.url);
+						bioTemplate.find(".bio-link").text(biography.site);
+
+						artistNameTemplate.append(bioTemplate);
+
+					});
+
+
+
+				});
+
+
 				$(".results").append(artistNameTemplate);
 			});
 
