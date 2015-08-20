@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Satisfy|Lora' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -10,13 +11,14 @@
 </head>
 <body>
 	<container>
-		<h1 id="headline">Find My Favorite Music</h1>
+
+		<h1 id="headline">Artist Discography Finder</h1>
 
 		<form id="search-options">
 			<label>Artist:</label> <input type="text" name="artist" class="property"><br>
-			<label>Genre:</label> <input type="text" name="genre" class="property"><br>
+			<!-- <label>Genre:</label> <input type="text" name="genre" class="property"><br>
 			<label>Location:</label> <input type="text" name="location" class="property"><br>
-			<label>Date(s):</label> <input type="text" name="dates" class="property"><br>
+			<label>Date(s):</label> <input type="text" name="dates" class="property"><br> -->
 			<input type="button" value=Submit id="submit-btn">
 			
 		</form>
@@ -26,11 +28,12 @@
 		</div>
 
 		<div class="templates hidden">
-			<div class="artist-name"><h2><strong class="name">Artist's Name</strong></h2></div>
-			<div class="biography"><div class="bio-content">Lorum Iptum</div><a class="bio-link" href="http://wikipedia.com">Wikipedia</a></div>
-
-			<div class="photo"><img src="img/Behance.png"></div>
-			<div class="social"><img src="img/Facebook.png" alt="Facebook" class="social"><img src="img/MySpace.png" alt="MySpace" class="social"><img src="img/Google +.png" alt="Google+" class="social"><img src="img/Twitter2.png" alt="Twitter" class="social"><img src="img/Youtube.png" alt="Youtube" class="social"></div>
+			<div class="results-text">
+				<div class="artist-name"><h2><strong class="name">Artist's Name</strong></h2></div>
+				<div class="biography"><div class="bio-content">Lorum Iptum</div><a class="bio-link" href="http://wikipedia.com">Wikipedia</a></div>
+			</div>
+			<!-- <div class="photo"><img src="img/Behance.png"></div>
+			<div class="social"><img src="img/Facebook.png" alt="Facebook" class="social"><img src="img/MySpace.png" alt="MySpace" class="social"><img src="img/Google +.png" alt="Google+" class="social"><img src="img/Twitter2.png" alt="Twitter" class="social"><img src="img/Youtube.png" alt="Youtube" class="social"></div> -->
 
 		</div>
 

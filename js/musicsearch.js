@@ -4,9 +4,9 @@ $(document).ready(function() {
 		$("#results").html('');
 		// get the value of the input the user submitted
 		var artist = $("input[name='artist']").val();
-		var genre = $(this).find("input[name='genre']").val();
-		var location = $(this).find("input[name='location']").val();
-		var dates = $(this).find("input[name='dates']").val();
+		// var genre = $(this).find("input[name='genre']").val();
+		// var location = $(this).find("input[name='location']").val();
+		// var dates = $(this).find("input[name='dates']").val();
 
 		var artistRequest = {api_key:"RRXS6RKJR0QZY7LZY",
 							 format:"jsonp",
